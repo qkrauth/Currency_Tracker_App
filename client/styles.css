@@ -4,22 +4,52 @@ body {
     width: 100vw;
 }
 
-header {
+#top {
     height: 10%;
     background-color:blanchedalmond
 }
 
+#top-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+#title {
+    font-size: 60px;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+}
+
+#questions {
+    font-size: 20px;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+    position: relative;
+    left: 70px;
+    bottom: 60px;
+
+}
+
+#FAQ-form {
+    position: relative;
+    left: 10px;
+    bottom: 10px;
+
+}
+
+
 main {
     height: 85%;
+    background-image: linear-gradient(rgba(211,211,211,.3), rgba(211,211,211,.3)), url("https://i.pinimg.com/originals/1c/83/51/1c8351524331db2fd449615585ab7654.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#background {
-    height: 100%;
-    width: 100%;
-    opacity: 75%;
-}
 
-footer {
+#bottom {
     height: 5%;
     background-color: blanchedalmond;
+    display: flex;
+    align-items: center;
 }

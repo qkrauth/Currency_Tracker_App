@@ -3,7 +3,7 @@ let signUpBtn = document.querySelector("#sign-up");
 let signUpText = document.querySelector("#newsletter");
 
 function emailSubmission() {
-    let confirm = document.createElement("p");
+    let confirm = document.createElement("h6");
     confirm.textContent = "Thank you for signing up for our weekly newsletter!";
     signUpForm.remove()
     signUpText.remove()

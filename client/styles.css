@@ -30,6 +30,7 @@ body {
     position: relative;
     left: 70px;
     bottom: 60px;
+    width: fit-content;
 
 }
 
@@ -37,6 +38,7 @@ body {
     position: relative;
     left: 10px;
     bottom: 10px;
+    width: fit-content;
 
 }
 
@@ -57,8 +59,7 @@ main {
     width: 700px;
     background-color: blanchedalmond;
     border: 10px solid burlywood;
-    box-shadow: 10px 10px 5px;
-    
+    box-shadow: 10px 10px 5px white;
 }
 
 #a1-text {
@@ -66,8 +67,8 @@ main {
     font-weight: bold;
     font-size: 30px;
     position: relative;
-    left: 50px;
     top: 10px;
+    text-align: center;
 }
 
 #generate {
@@ -91,18 +92,39 @@ main {
     height: 300px;
     width: 700px;
     background-color: white;
+    border: 10px solid burlywood;
+    box-shadow: 10px 10px 5px;
 }
 
 #area3 {
     height: 300px;
     width: 700px;
     background-color: white;
+    border: 10px solid burlywood;
+    box-shadow: 10px 10px 5px;
+}
+
+#a3-text {
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    top: 10px;
+}
+
+#Find-form {
+    position: relative;
+    left: 225px;
+    top: 100px;
 }
 
 #area4 {
     height: 300px;
     width: 700px;
-    background-color: white;
+    background-color: blanchedalmond;
+    border: 10px solid burlywood;
+    box-shadow: 10px 10px 5px white;
 }
 
 
@@ -125,3 +147,17 @@ main {
     font-family:'Courier New', Courier, monospace;
     left: 30px;
 }
+
+h6 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+    position: relative;
+    left: 30px;
+}
+
+/* @media(max-width:1000px) {
+    #area1 {
+        width: 50px;
+    }
+} */

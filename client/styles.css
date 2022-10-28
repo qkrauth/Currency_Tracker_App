@@ -96,6 +96,15 @@ main {
     box-shadow: 10px 10px 5px;
 }
 
+#a2-text {
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    top: 10px;
+}
+
 #area3 {
     height: 300px;
     width: 700px;
@@ -125,6 +134,15 @@ main {
     background-color: blanchedalmond;
     border: 10px solid burlywood;
     box-shadow: 10px 10px 5px white;
+}
+
+#a4-text {
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    top: 10px;
 }
 
 

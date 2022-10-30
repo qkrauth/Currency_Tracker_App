@@ -1,3 +1,7 @@
+// const { default: axios } = require("axios");
+// const { response } = require("express");
+
+// footer form:
 let signUpForm = document.querySelector("#email");
 let signUpBtn = document.querySelector("#sign-up");
 let signUpText = document.querySelector("#newsletter");
@@ -12,6 +16,7 @@ function emailSubmission() {
 signUpBtn.addEventListener("click", emailSubmission);
 
 
+// generate ideas:
 let currencyData = [
     "United States Dollar",
     "Euro",
@@ -41,3 +46,39 @@ function randomizer() {
 }
 
 generateBtn.addEventListener("click", randomizer);
+
+
+// lists:
+const wishList = document.querySelector("#wishlist-container");
+const wishForm = document.querySelector("#add-wishlist");
+const wishInput = document.querySelector("#wishlist-input");
+
+const createWishList = arr => {
+    wishList.innerHTML = ""
+    let newWishList = document.createElement("ul")
+
+    arr.forEach(wishListObj => {
+        let { property } = wishListObj
+        let wishListItem = document.createElement("li")
+
+        wishListItem.textContent = property
+
+        newWishList.appendChild(wishListItem)
+    })
+    wishList.appendChild(newWishList)
+}
+
+const getWishList = () => {
+    axios.get("/route/wish_list")
+    .then(response => {
+        let { data } = response
+        createWishList(data)
+    })
+}
+
+const addToWishList = evt => {
+    evt.preventDefault()
+}
+
+wishForm.addEventListener("submit", addToWishList);
+getWishList();

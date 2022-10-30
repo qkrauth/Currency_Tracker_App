@@ -1,17 +1,20 @@
 // databases for front end lists
-const wish_list = []
-const collected_list = []
+// const wish_list = []
+// const collected_list = []
 
-let wishListId = 1;
-let collectedListID = 1;
+const dbWish = require("./dbWish.json")
+const dbCollect = require("./dbCollect.json")
+
+let wishListId = 2;
+let collectedListID = 2;
 
 module.exports = {
     getWishList: (req, res) => {
-        res.status(200).send(wish_list);
+        res.status(200).send(dbWish);
     },
 
     getCollectedList: (req, res) => {
-        res.status(200).send(collected_list);
+        res.status(200).send(dbCollect);
     },
 
     postWishList: (req, res) => {

@@ -48,7 +48,9 @@ function randomizer() {
 generateBtn.addEventListener("click", randomizer);
 
 
-// lists:
+////////// lists //////////
+
+// wish list:
 const wishList = document.querySelector("#wishlist-container");
 const wishForm = document.querySelector("#add-wishlist");
 const wishInput = document.querySelector("#wishlist-input");
@@ -58,10 +60,13 @@ const createWishList = arr => {
     let newWishList = document.createElement("ul")
 
     arr.forEach(wishListObj => {
-        let { property } = wishListObj
+        let { property, id } = wishListObj
         let wishListItem = document.createElement("li")
 
         wishListItem.textContent = property
+        wishListItem.id = id
+        wishListItem.addEventListener("click", deleteWishList)
+        // wishListItem.classList.add("")// how to add class names to HTML created in JS
 
         newWishList.appendChild(wishListItem)
     })
@@ -69,7 +74,7 @@ const createWishList = arr => {
 }
 
 const getWishList = () => {
-    axios.get("/route/wish_list")
+    axios.get("/route/wishList")
     .then(response => {
         let { data } = response
         createWishList(data)
@@ -78,7 +83,85 @@ const getWishList = () => {
 
 const addToWishList = evt => {
     evt.preventDefault()
+    let newWishProperty = {
+        property: wishInput.value
+    }
+
+    axios.post("/route/wishList", newWishProperty)
+    .then(response => {
+        let { data } = response
+        createWishList(data)
+    })
+}
+
+const deleteWishList = evt => {
+    evt.preventDefault()
+    let propertyID = evt.target.id
+
+    axios.delete(`/route/wishList/${propertyID}`)
+    .then(response => {
+        let { data } = response
+        createWishList(data)
+    })
 }
 
 wishForm.addEventListener("submit", addToWishList);
 getWishList();
+
+// collect list:
+const collectList = document.querySelector("#collectlist-container");
+const collectForm = document.querySelector("#add-collectlist");
+const collectInput = document.querySelector("#collectlist-input");
+
+const createCollectList = arr => {
+    collectList.innerHTML = ""
+    let newCollectList = document.createElement("ul")
+
+    arr.forEach(collectListObj => {
+        let { property, id } = collectListObj
+        let collectListItem = document.createElement("li")
+
+        collectListItem.textContent = property
+        collectListItem.id = id
+        collectListItem.addEventListener("click", deleteCollectedList)
+
+        newCollectList.appendChild(collectListItem)
+    })
+    collectList.appendChild(newCollectList)
+}
+
+const getCollectList = () => {
+    axios.get("/route/collectedList")
+    .then(response => {
+        let { data } = response
+        createCollectList(data)
+    })
+}
+
+const addToCollectList = evt => {
+    evt.preventDefault()
+    let newCollectProperty = {
+        property: collectInput.value
+    }
+
+    axios.post("/route/collectedList", newCollectProperty)
+    .then(response => {
+        let { data } = response
+        createCollectList(data)
+    })
+}
+
+const deleteCollectedList = evt => {
+    evt.preventDefault()
+    let propertyID = evt.target.id
+
+    axios.delete(`/route/collectedList/${propertyID}`)
+    .then(response => {
+        let { data } = response
+        createCollectList(data)
+    })
+}
+
+collectForm.addEventListener("submit", addToCollectList);
+getCollectList()
+

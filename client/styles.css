@@ -105,6 +105,20 @@ main {
     top: 10px;
 }
 
+#wishlist-container {
+    height: 200px;
+    width: 700px;
+    position: relative;
+    top: 20px;
+}
+
+#add-wishlist {
+    position: relative;
+    left: 220px;
+    top: 30px;
+    width: fit-content;
+}
+
 #area3 {
     height: 300px;
     width: 700px;
@@ -145,6 +159,27 @@ main {
     top: 10px;
 }
 
+#collectlist-container {
+    height: 200px;
+    width: 700px;
+    position: relative;
+    top: 20px;
+}
+
+#add-collectlist {
+    position: relative;
+    left: 220px;
+    top: 30px;
+    width: fit-content;
+}
+
+li {
+    position: relative;
+    left: 10px;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
+}
 
 #bottom {
     height: 5%;

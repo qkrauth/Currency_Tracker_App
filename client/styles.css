@@ -179,6 +179,7 @@ li {
     font-weight: bold;
     font-family:'Courier New', Courier, monospace;
     font-size: 20px;
+    padding: 3px;
 }
 
 #bottom {
@@ -207,6 +208,15 @@ h6 {
     font-family:'Courier New', Courier, monospace;
     position: relative;
     left: 30px;
+}
+
+h5 {
+    font-size: 15px;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+    position: absolute;
+    right: 10px;
+    
 }
 
 /* @media(max-width:1000px) {

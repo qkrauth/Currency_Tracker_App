@@ -6,9 +6,9 @@ const app = express();
 
 app.use(express.json());
 app.use(cors());
-app.use(express.static("client"));
+app.use(express.static("client")); // "serve up" the files and file paths in the client directory on the front end
 
-app.get("/", getHTML);
+app.get("/", getHTML); // base endpoint for this localhost webpage
 
 
 //get databases

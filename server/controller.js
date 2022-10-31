@@ -4,7 +4,7 @@
 
 const dbWish = require("./dbWish.json")
 const dbCollect = require("./dbCollect.json")
-const path = require("path")
+const path = require("path") // this is needed to make the site work on localhost & not just on run live server
 
 let wishListId = 2;
 let collectedListID = 2;
@@ -12,7 +12,7 @@ let collectedListID = 2;
 module.exports = {
     getHTML: (req, res) => {
         res.sendFile(path.join(__dirname, "../client/index.html"));
-    },
+    }, // gets the HTML file and sends it. the css/js files have "paths" already in the HTML file
 
     getWishList: (req, res) => {
         res.status(200).send(dbWish);

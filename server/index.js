@@ -28,5 +28,7 @@ app.delete("/route/wishList/:id", deleteWishList);
 
 app.delete("/route/collectedList/:id", deleteCollectedList);
 
+const port = process.env.PORT || 5500
 
-app.listen(5500, console.log("server running on 5500"));
+
+app.listen(port, console.log(`server running on ${port}`));

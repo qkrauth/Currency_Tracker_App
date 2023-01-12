@@ -1,358 +1,418 @@
 body {
-    margin: 0;
-    height: 100vh;
-    width: 100vw;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
 }
 
 #top {
-    height: 10%;
-    background-color:blanchedalmond
+  height: 10%;
+  background-color: blanchedalmond;
 }
 
 #top-container {
-    display: flex;
-    justify-content: center;
-    padding-top: 15px;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
 }
 
 #title {
-    color: white;
-    font-size: 60px;
-    font-weight: bold;
-    font-family:'Courier New', Courier, monospace;
-    text-shadow: 3px 3px black;
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  text-shadow: 3px 3px black;
 }
 
 #questions {
-    font-size: 20px;
-    font-weight: bold;
-    font-family:'Courier New', Courier, monospace;
-    position: relative;
-    left: 70px;
-    bottom: 60px;
-    width: fit-content;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  position: relative;
+  left: 70px;
+  bottom: 60px;
+  width: fit-content;
 }
 
 #FAQ-form {
-    position: relative;
-    left: 10px;
-    bottom: 10px;
-    width: fit-content;
-
+  position: relative;
+  left: 10px;
+  bottom: 10px;
+  width: fit-content;
 }
 
-
 main {
-    height: 85%;
-    background-image: linear-gradient(rgba(211,211,211,.3), rgba(211,211,211,.3)), url("https://i.pinimg.com/originals/1c/83/51/1c8351524331db2fd449615585ab7654.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
+  height: 85%;
+  background-image: linear-gradient(
+      rgba(211, 211, 211, 0.3),
+      rgba(211, 211, 211, 0.3)
+    ),
+    url("https://i.pinimg.com/originals/1c/83/51/1c8351524331db2fd449615585ab7654.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 #area1 {
-    height: 300px;
-    width: 700px;
-    background-color: blanchedalmond;
-    border: 10px solid burlywood;
-    box-shadow: 10px 10px 5px white;
+  height: 300px;
+  width: 700px;
+  background-color: blanchedalmond;
+  border: 10px solid burlywood;
+  box-shadow: 10px 10px 5px white;
 }
 
 #a1-text {
-    font-family:'Courier New', Courier, monospace;
-    font-weight: bold;
-    font-size: 30px;
-    position: relative;
-    top: 10px;
-    text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 30px;
+  position: relative;
+  top: 10px;
+  text-align: center;
 }
 
 #generate {
+  margin: 50px;
+  height: 40px;
+  width: 150px;
+  position: relative;
+  left: 225px;
+  top: 30px;
+}
+
+#output {
+  margin: 50px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+}
+
+#area2 {
+  height: 300px;
+  width: 700px;
+  background-color: white;
+  border: 10px solid burlywood;
+  box-shadow: 10px 10px 5px;
+}
+
+#a2-text {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  top: 10px;
+}
+
+#wishlist-container {
+  height: 200px;
+  width: 700px;
+  position: relative;
+  top: 20px;
+}
+
+#add-wishlist {
+  position: relative;
+  left: 220px;
+  top: 30px;
+  width: fit-content;
+}
+
+#area3 {
+  height: 300px;
+  width: 700px;
+  background-color: white;
+  border: 10px solid burlywood;
+  box-shadow: 10px 10px 5px;
+}
+
+#a3-text {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  top: 10px;
+}
+
+#Find-form {
+  position: relative;
+  left: 225px;
+  top: 100px;
+}
+
+#area4 {
+  height: 300px;
+  width: 700px;
+  background-color: blanchedalmond;
+  border: 10px solid burlywood;
+  box-shadow: 10px 10px 5px white;
+}
+
+#a4-text {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  top: 10px;
+}
+
+#collectlist-container {
+  height: 200px;
+  width: 700px;
+  position: relative;
+  top: 20px;
+}
+
+#add-collectlist {
+  position: relative;
+  left: 220px;
+  top: 30px;
+  width: fit-content;
+}
+
+li {
+  position: relative;
+  left: 10px;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  padding: 3px;
+}
+
+#bottom {
+  height: 5%;
+  background-color: blanchedalmond;
+  display: flex;
+  align-items: center;
+}
+
+#email {
+  position: relative;
+  left: 10px;
+}
+
+#newsletter {
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  left: 30px;
+}
+
+h6 {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  position: relative;
+  left: 30px;
+}
+
+h5 {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  position: absolute;
+  right: 10px;
+}
+
+@media (max-width: 1660px) {
+  body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  #title {
+    font-size: 50px;
+  }
+
+  #FAQ-form {
+    position: relative;
+    left: 10px;
+    bottom: 20px;
+  }
+
+  #questions {
+    position: relative;
+    left: 70px;
+    bottom: 70px;
+  }
+
+  #area1 {
+    height: 270px;
+    width: 650px;
+  }
+
+  #area2 {
+    height: 270px;
+    width: 650px;
+  }
+
+  #add-wishlist {
+    position: relative;
+    left: 220px;
+    top: 10px;
+    width: fit-content;
+  }
+
+  #area3 {
+    height: 270px;
+    width: 650px;
+  }
+
+  #area4 {
+    height: 270px;
+    width: 650px;
+  }
+
+  #add-collectlist {
+    position: relative;
+    left: 220px;
+    top: 10px;
+    width: fit-content;
+  }
+}
+
+@media (max-width: 420px) {
+  body {
+    margin: 0;
+    height: 1800px;
+  }
+
+  #top {
+    height: 200px;
+  }
+
+  #title {
+    font-size: 40px;
+    text-shadow: 2px 2px black;
+    box-sizing: border-box;
+    padding: 5px;
+  }
+
+  #FAQ-form {
+    position: relative;
+    left: 10px;
+    bottom: -60px;
+    width: fit-content;
+  }
+
+  #questions {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace;
+    position: relative;
+    left: 10px;
+    bottom: -5px;
+    width: fit-content;
+  }
+
+  #a1-text {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    top: 10px;
+    text-align: center;
+  }
+
+  #generate {
     margin: 50px;
     height: 40px;
     width: 150px;
     position: relative;
-    left: 225px;
+    left: 70px;
     top: 30px;
-}
+  }
 
-#output {
-    margin: 50px;
-    font-family:'Courier New', Courier, monospace;
-    font-weight: bold;
-    text-align: center;
-    font-size: 30px;
-}
-
-#area2 {
+  #area2 {
     height: 300px;
-    width: 700px;
+    width: 100%;
     background-color: white;
     border: 10px solid burlywood;
     box-shadow: 10px 10px 5px;
-}
+  }
 
-#a2-text {
-    font-family:'Courier New', Courier, monospace;
-    font-weight: bold;
-    font-size: 30px;
-    text-align: center;
-    position: relative;
-    top: 10px;
-}
-
-#wishlist-container {
+  #wishlist-container {
     height: 200px;
-    width: 700px;
+    width: 100%;
     position: relative;
     top: 20px;
-}
+  }
 
-#add-wishlist {
+  #add-wishlist {
     position: relative;
-    left: 220px;
+    left: 80px;
     top: 30px;
     width: fit-content;
-}
+  }
 
-#area3 {
-    height: 300px;
-    width: 700px;
-    background-color: white;
-    border: 10px solid burlywood;
-    box-shadow: 10px 10px 5px;
-}
-
-#a3-text {
-    font-family:'Courier New', Courier, monospace;
-    font-weight: bold;
-    font-size: 30px;
-    text-align: center;
+  #Find-form {
     position: relative;
-    top: 10px;
-}
-
-#Find-form {
-    position: relative;
-    left: 225px;
+    left: 85px;
     top: 100px;
-}
+  }
 
-#area4 {
+  #area4 {
     height: 300px;
-    width: 700px;
+    width: 100%;
     background-color: blanchedalmond;
     border: 10px solid burlywood;
     box-shadow: 10px 10px 5px white;
-}
+  }
 
-#a4-text {
-    font-family:'Courier New', Courier, monospace;
-    font-weight: bold;
-    font-size: 30px;
-    text-align: center;
-    position: relative;
-    top: 10px;
-}
-
-#collectlist-container {
+  #collectlist-container {
     height: 200px;
-    width: 700px;
+    width: 100%;
     position: relative;
     top: 20px;
-}
+  }
 
-#add-collectlist {
+  #add-collectlist {
     position: relative;
-    left: 220px;
+    left: 80px;
     top: 30px;
     width: fit-content;
-}
+  }
 
-li {
-    position: relative;
-    left: 10px;
-    font-weight: bold;
-    font-family:'Courier New', Courier, monospace;
-    font-size: 20px;
-    padding: 3px;
-}
-
-#bottom {
-    height: 5%;
-    background-color: blanchedalmond;
+  #bottom {
+    height: 200px;
     display: flex;
-    align-items: center;
-}
+    flex-direction: column;
+  }
 
-#email {
-    position: relative;
-    left: 10px;
-}
+  #email {
+    box-sizing: border-box;
+    padding: 10px;
+  }
 
-#newsletter {
+  #newsletter {
     position: relative;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
-    font-family:'Courier New', Courier, monospace;
-    left: 30px;
-}
+    font-family: "Courier New", Courier, monospace;
+    left: 20px;
+    padding: 10px;
+  }
 
-h6 {
-    font-size: 20px;
-    font-weight: bold;
-    font-family:'Courier New', Courier, monospace;
-    position: relative;
-    left: 30px;
-}
-
-h5 {
+  h5 {
     font-size: 15px;
     font-weight: bold;
-    font-family:'Courier New', Courier, monospace;
-    position: absolute;
-    right: 10px;   
-}
+    font-family: "Courier New", Courier, monospace;
+    position: relative;
+    right: 5px;
+    top: 70px;
+  }
 
-@media (max-width: 420px) {
-    body {
-        margin: 0;
-        height: 1800px;
-    }
-
-    #top {
-        height: 200px;
-    }
-
-    #title {
-        font-size: 40px;
-        text-shadow: 2px 2px black;
-        box-sizing: border-box;
-        padding: 5px;
-    }
-
-    #FAQ-form {
-        position: relative;
-        left: 10px;
-        bottom: -60px;
-        width: fit-content;
-    }
-
-    #questions {
-        font-size: 25px;
-        font-weight: bold;
-        font-family:'Courier New', Courier, monospace;
-        position: relative;
-        left: 10px;
-        bottom: -5px;
-        width: fit-content;
-    }
-
-    #a1-text {
-        font-family:'Courier New', Courier, monospace;
-        font-weight: bold;
-        font-size: 20px;
-        position: relative;
-        top: 10px;
-        text-align: center;
-    }
-
-    #generate {
-        margin: 50px;
-        height: 40px;
-        width: 150px;
-        position: relative;
-        left: 70px;
-        top: 30px;
-    }
-
-    #area2 {
-        height: 300px;
-        width: 100%;
-        background-color: white;
-        border: 10px solid burlywood;
-        box-shadow: 10px 10px 5px;
-    }
-
-    #wishlist-container {
-        height: 200px;
-        width: 100%;
-        position: relative;
-        top: 20px;
-    }
-
-    #add-wishlist {
-        position: relative;
-        left: 80px;
-        top: 30px;
-        width: fit-content;
-    }
-
-    #Find-form {
-        position: relative;
-        left: 85px;
-        top: 100px;
-    }
-
-    #area4 {
-        height: 300px;
-        width: 100%;
-        background-color: blanchedalmond;
-        border: 10px solid burlywood;
-        box-shadow: 10px 10px 5px white;
-    }
-
-    #collectlist-container {
-        height: 200px;
-        width: 100%;
-        position: relative;
-        top: 20px;
-    }
-
-    #add-collectlist {
-        position: relative;
-        left: 80px;
-        top: 30px;
-        width: fit-content;
-    }
-
-    #bottom {
-        height: 200px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #email {
-        box-sizing: border-box;
-        padding: 10px;
-    }
-
-    #newsletter {
-        position: relative;
-        font-size: 18px;
-        font-weight: bold;
-        font-family:'Courier New', Courier, monospace;
-        left: 20px;
-        padding: 10px;
-    }
-
-    h5 {
-        font-size: 15px;
-        font-weight: bold;
-        font-family:'Courier New', Courier, monospace;
-        position: relative;
-        right: 5px;
-        top: 70px;
-    }
-
-    h6 {
-        font-size: 15px;
-        font-weight: bold;
-        font-family:'Courier New', Courier, monospace;
-        position: relative;
-        left: 30px;
-    }
+  h6 {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace;
+    position: relative;
+    left: 30px;
+  }
 }

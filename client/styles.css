@@ -277,7 +277,7 @@ h5 {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 1350px) {
   body {
     margin: 0;
     height: 1800px;
@@ -331,7 +331,7 @@ h5 {
 
   #area2 {
     height: 300px;
-    width: 100%;
+    /* width: 100%; */
     background-color: white;
     border: 10px solid burlywood;
     box-shadow: 10px 10px 5px;
@@ -353,13 +353,14 @@ h5 {
 
   #Find-form {
     position: relative;
+    width: fit-content;
     left: 85px;
     top: 100px;
   }
 
   #area4 {
     height: 300px;
-    width: 100%;
+    /* width: 100%; */
     background-color: blanchedalmond;
     border: 10px solid burlywood;
     box-shadow: 10px 10px 5px white;

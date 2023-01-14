@@ -1,7 +1,3 @@
-// databases for front end lists
-// const wish_list = []
-// const collected_list = []
-
 const dbWish = require("./dbWish.json")
 const dbCollect = require("./dbCollect.json")
 const path = require("path") // this is needed to make the site work on localhost & not just on run live server
@@ -9,6 +5,7 @@ const path = require("path") // this is needed to make the site work on localhos
 let wishListId = 2;
 let collectedListID = 2;
 
+// controller functions
 module.exports = {
     getHTML: (req, res) => {
         res.sendFile(path.join(__dirname, "../client/index.html"));

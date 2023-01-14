@@ -1,6 +1,3 @@
-// const { default: axios } = require("axios");
-// const { response } = require("express");
-
 // footer form:
 let signUpForm = document.querySelector("#email");
 let signUpBtn = document.querySelector("#sign-up");
@@ -48,7 +45,6 @@ function randomizer() {
 generateBtn.addEventListener("click", randomizer);
 
 
-////////// lists //////////
 
 // wish list:
 const wishList = document.querySelector("#wishlist-container");
@@ -56,6 +52,7 @@ const wishForm = document.querySelector("#add-wishlist");
 const wishInput = document.querySelector("#wishlist-input");
 
 const createWishList = arr => {
+    // innerHTML adds HTML into a portion of document without making a hard-code change
     wishList.innerHTML = ""
     let newWishList = document.createElement("ul")
 

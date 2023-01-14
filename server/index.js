@@ -17,13 +17,13 @@ app.get("/route/wishList", getWishList);
 app.get("/route/collectedList", getCollectedList);
 
 
-//get/add data to databases
+//add data to data.JSON
 app.post("/route/wishList", postWishList);
 
 app.post("/route/collectedList", postCollectedList);
 
 
-//delete data from database by id
+//delete data from data.JSON by id
 app.delete("/route/wishList/:id", deleteWishList);
 
 app.delete("/route/collectedList/:id", deleteCollectedList);
